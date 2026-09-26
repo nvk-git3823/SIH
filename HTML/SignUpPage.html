@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sign Up | SIH</title>
+
+    <!-- YOUR EXISTING JAVASCRIPT -->
+    <script src="../JS/SignUpPage.js"></script>
+
+    <!-- YOUR EXISTING CSS -->
+    <link
+        rel="stylesheet"
+        href="../CSS/SignUpPage.css"
+    >
+
+    <!-- Modern Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div class="background">
+
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+
+    </div>
+
+
+    <!-- =========================================
+         MAIN CONTAINER
+    ========================================== -->
+
+    <main class="signup-wrapper">
+
+
+        <!-- =====================================
+             LEFT BRANDING SECTION
+        ====================================== -->
+
+        <section class="brand-panel">
+
+            <div class="brand-content">
+
+
+                <!-- Logo -->
+
+                <div class="brand-logo">
+
+                    <div class="logo-icon">
+                        ✦
+                    </div>
+
+                    <span>
+                        SIH<span class="logo-dot">.</span>
+                    </span>
+
+                </div>
+
+
+                <!-- Main Message -->
+
+                <div class="brand-copy">
+
+                    <span class="eyebrow">
+                        JOIN THE COMMUNITY
+                    </span>
+
+                    <h1>
+                        Build your
+                        <span>future.</span>
+                    </h1>
+
+                    <p>
+                        Create your account and become part of a
+                        connected ecosystem built for students,
+                        graduates and companies.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefits -->
+
+                <div class="feature-list">
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Create Your Profile
+                            </strong>
+
+                            <span>
+                                Showcase your skills and identity.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ↗
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Discover Opportunities
+                            </strong>
+
+                            <span>
+                                Connect with meaningful possibilities.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ◉
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Grow Together
+                            </strong>
+
+                            <span>
+                                Learn, connect and move forward.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer -->
+
+            <div class="brand-footer">
+
+                <span>
+                    © 2026 SIH Project
+                </span>
+
+                <span class="footer-line"></span>
+
+                <span>
+                    Innovation starts here.
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SIGNUP FORM SECTION
+        ====================================== -->
+
+        <section class="signup-panel">
+
+
+            <div id="SignUpDiv">
+
+
+                <!-- Mobile Logo -->
+
+                <div class="mobile-logo">
+
+                    <div class="logo-icon">
+                        ✦
+                    </div>
+
+                    <span>
+                        SIH<span class="logo-dot">.</span>
+                    </span>
+
+                </div>
+
+
+
+                <!-- =================================
+                     HEADER
+                ================================== -->
+
+                <div class="signup-header">
+
+                    <span class="welcome-badge">
+
+                        <span class="status-dot"></span>
+
+                        Get started
+
+                    </span>
+
+
+                    <h1 id="SignUpText">
+                        Create your account
+                    </h1>
+
+
+                    <p>
+                        Join the platform and unlock your
+                        personalized experience.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================
+                     FORM
+                ================================== -->
+
+                <form>
+
+
+                    <!-- USERNAME -->
+
+                    <div class="input-group">
+
+                        <label for="SignUpUsername">
+                            Username
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <path
+                                        d="M20 21a8 8 0 0 0-16 0"
+                                    />
+
+                                    <circle
+                                        cx="12"
+                                        cy="7"
+                                        r="4"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <input
+                                type="text"
+                                class="SignUpInputs"
+                                id="SignUpUsername"
+                                placeholder="Choose a username"
+                                autofocus
+                            />
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-group">
+
+                        <label for="SignUpPassword">
+                            Password
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <rect
+                                        x="3"
+                                        y="10"
+                                        width="18"
+                                        height="11"
+                                        rx="2"
+                                    />
+
+                                    <path
+                                        d="M7 10V7a5 5 0 0 1 10 0v3"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <input
+                                type="password"
+                                class="SignUpInputs"
+                                id="SignUpPassword"
+                                placeholder="Create a secure password"
+                            />
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         ACCOUNT TYPE
+                    ================================== -->
+
+                    <div class="account-type-section">
+
+                        <div class="section-heading">
+
+                            <div>
+
+                                <label>
+                                    Account type
+                                </label>
+
+                                <span>
+                                    Select the profile that describes you
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="account-type-grid">
+
+
+                            <!-- STUDENT -->
+
+                            <label class="account-card active">
+
+                                <input
+                                    type="radio"
+                                    name="SignUpUserType"
+                                    id="Student"
+                                    value="Student"
+                                    onclick="UserType()"
+                                    checked
+                                />
+
+
+                                <span class="account-card-content">
+
+                                    <span class="account-icon">
+                                        🎓
+                                    </span>
+
+
+                                    <span class="account-info">
+
+                                        <strong>
+                                            Student
+                                        </strong>
+
+                                        <small>
+                                            Learn & explore
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="account-check">
+                                        ✓
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+
+                            <!-- GRADUATE -->
+
+                            <label class="account-card">
+
+                                <input
+                                    type="radio"
+                                    name="SignUpUserType"
+                                    id="Graduate"
+                                    value="Graduate"
+                                    onclick="UserType()"
+                                />
+
+
+                                <span class="account-card-content">
+
+                                    <span class="account-icon">
+                                        🚀
+                                    </span>
+
+
+                                    <span class="account-info">
+
+                                        <strong>
+                                            Graduate
+                                        </strong>
+
+                                        <small>
+                                            Grow & connect
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="account-check">
+                                        ✓
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+
+                            <!-- COMPANY -->
+
+                            <label class="account-card">
+
+                                <input
+                                    type="radio"
+                                    name="SignUpUserType"
+                                    id="Compnay"
+                                    value="Company"
+                                    onclick="UserType()"
+                                />
+
+
+                                <span class="account-card-content">
+
+                                    <span class="account-icon">
+                                        🏢
+                                    </span>
+
+
+                                    <span class="account-info">
+
+                                        <strong>
+                                            Company
+                                        </strong>
+
+                                        <small>
+                                            Hire & discover
+                                        </small>
+
+                                    </span>
+
+
+                                    <span class="account-check">
+                                        ✓
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         STUDENT / GRADUATE FIELDS
+                    ================================== -->
+
+                    <div
+                        id="UserTypeSignUpSandG"
+                        class="dynamic-section"
+                    >
+
+
+                        <!-- AGE -->
+
+                        <div class="input-group">
+
+                            <label for="SignUpAge">
+                                Age
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+
+                                        <circle
+                                            cx="12"
+                                            cy="12"
+                                            r="9"
+                                        />
+
+                                        <path
+                                            d="M12 7v5l3 2"
+                                        />
+
+                                    </svg>
+
+                                </span>
+
+
+                                <input
+                                    type="number"
+                                    class="SignUpInputs"
+                                    id="SignUpAge"
+                                    placeholder="Enter your age"
+                                />
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- QUALIFICATION -->
+
+                        <div class="input-group">
+
+                            <label for="SignUpQualification">
+                                Qualification
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+
+                                        <path
+                                            d="M3 10l9-5 9 5-9 5-9-5Z"
+                                        />
+
+                                        <path
+                                            d="M7 12.5V17c3 2 7 2 10 0v-4.5"
+                                        />
+
+                                    </svg>
+
+                                </span>
+
+
+                                <input
+                                    type="text"
+                                    class="SignUpInputs"
+                                    id="SignUpQualification"
+                                    placeholder="Enter your qualification"
+                                />
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         COMPANY FIELDS
+                    ================================== -->
+
+                    <div
+                        id="UserTypeSignUpC"
+                        class="dynamic-section"
+                    >
+
+
+                        <!-- COMPANY NAME -->
+
+                        <div class="input-group">
+
+                            <label for="SignUpCompanyName">
+                                Company name
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+
+                                        <path
+                                            d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16"
+                                        />
+
+                                        <path
+                                            d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"
+                                        />
+
+                                    </svg>
+
+                                </span>
+
+
+                                <input
+                                    type="text"
+                                    class="SignUpInputs"
+                                    id="SignUpCompanyName"
+                                    placeholder="Enter company name"
+                                />
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- REGISTRATION -->
+
+                        <div class="registration-section">
+
+                            <label>
+                                Registration status
+                            </label>
+
+
+                            <div class="registration-options">
+
+
+                                <label class="registration-card">
+
+                                    <input
+                                        type="radio"
+                                        name="Registration"
+                                        id="Registered"
+                                        value="Registered"
+                                        checked
+                                    />
+
+                                    <span>
+                                        <span class="registration-dot"></span>
+                                        Registered
+                                    </span>
+
+                                </label>
+
+
+                                <label class="registration-card">
+
+                                    <input
+                                        type="radio"
+                                        name="Registration"
+                                        id="NotRegistered"
+                                        value="NotRegistered"
+                                    />
+
+                                    <span>
+                                        <span class="registration-dot"></span>
+                                        Not Registered
+                                    </span>
+
+                                </label>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         CREATE ACCOUNT BUTTON
+                    ================================== -->
+
+                    <button
+                        type="button"
+                        id="SignUpButton"
+                        onclick="SignUp()"
+                    >
+
+                        <span>
+                            Create account
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =================================
+                         DIVIDER
+                    ================================== -->
+
+                    <div class="divider">
+
+                        <span>
+                            or
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         LOGIN
+                    ================================== -->
+
+                    <div class="login-section">
+
+                        <span>
+                            Already have an account?
+                        </span>
+
+
+                        <button
+                            type="button"
+                            id="LoginButton"
+                            onclick="Login()"
+                        >
+
+                            Sign in
+                            <span>↗</span>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- SECURITY -->
+
+                    <div class="security-note">
+
+                        <span>
+                            🔒
+                        </span>
+
+                        <span>
+                            Your information is protected with secure authentication.
+                        </span>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         UI-ONLY INTERACTION
+         Does NOT touch your backend
+    ========================================== -->
+
+    <script>
+
+        /*
+         * Only synchronizes the visual active state
+         * of the account cards.
+         *
+         * Your existing UserType() function
+         * remains completely untouched.
+         */
+
+        const accountCards =
+            document.querySelectorAll(".account-card");
+
+
+        accountCards.forEach(card => {
+
+            const radio =
+                card.querySelector('input[type="radio"]');
+
+
+            radio.addEventListener("change", function () {
+
+                accountCards.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+
+                if (radio.checked) {
+                    card.classList.add("active");
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

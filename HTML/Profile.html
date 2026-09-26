@@ -1,0 +1,229 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/Profile.css">
+    <script src="../JS/Dashboard.js"></script>
+    <script src="../JS/Profile.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<title>Profile</title>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <div id="TopNav">
+
+        <div class="nav-brand">
+            <div class="brand-icon">S</div>
+            <span>SIH Portal</span>
+            <span>               </span>
+        
+        
+             <button
+                type="button"
+                class="DashboardButtons"
+                id="HomeButton"
+                onclick='window.location.href="../HTML/Dashboard.html"'>
+                <span class="button-icon">⌂</span>
+                <span>Home</span>
+            </button>
+            <button type="button" class="DashboardButtons nav-home" id="SkillsButton" onclick='window.location.href="../HTML/SkillsDashboard.html"'> <span
+                class="nav-icon">      </span> <span> Skills </span> </button>
+   </div>
+
+        <div class="nav-actions">
+
+           
+
+            <button
+                type="button"
+                class="DashboardButtons signout"
+                id="SignOutButton"
+                onclick="SignOut()">
+                <span class="button-icon">↪</span>
+                <span>Sign Out</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div id="Content">
+
+        <!-- Profile Header -->
+        <section class="profile-header">
+
+            <div class="header-content">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    PERSONAL PROFILE
+                </div>
+
+                <h1>Your Profile</h1>
+
+                <p>
+                    Manage your personal information and keep your profile details up to date.
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                id="EditButton"
+                onclick="Edit()">
+
+                <span class="edit-icon">✦</span>
+                <span>Edit Profile</span>
+
+                <img src="../EditImg.png" id="EditImg">
+
+            </button>
+
+        </section>
+
+
+        <!-- Profile Card -->
+        <section class="profile-card">
+
+            <!-- Avatar -->
+            <div class="avatar-section">
+
+                <div class="avatar-ring">
+                    <img src="../profilepic" id="ProPic">
+                </div>
+
+                <div class="profile-status">
+                    <span></span>
+                    Profile Active
+                </div>
+
+            </div>
+
+
+            <!-- Information -->
+            <div id="InfoTxtDiv">
+
+                <div class="info-heading">
+                    <span class="heading-line"></span>
+                    <span>Personal Information</span>
+                </div>
+
+
+                <!-- Username -->
+                <div class="info-row">
+
+                    <div class="info-icon">
+                        👤
+                    </div>
+
+                    <div class="info-content">
+
+                        <span class="info-label">
+                            Username
+                        </span>
+
+                        <p id="Username" class="InfoTxt">
+                            
+                        </p>
+
+                        <input
+                            type="text"
+                            id="UsernameEdit"
+                            class="EditInput">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Age -->
+                <div class="info-row">
+
+                    <div class="info-icon">
+                        ◷
+                    </div>
+
+                    <div class="info-content">
+
+                        <span class="info-label">
+                            Age
+                        </span>
+
+                        <p id="Age" class="InfoTxt">
+                            
+                        </p>
+
+                        <input
+                            type="number"
+                            id="AgeEdit"
+                            class="EditInput">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Qualification -->
+                <div class="info-row">
+
+                    <div class="info-icon">
+                        ◈
+                    </div>
+
+                    <div class="info-content">
+
+                        <span class="info-label">
+                            Qualification
+                        </span>
+
+                        <p id="Qualification" class="InfoTxt">
+                            
+                        </p>
+
+                        <input
+                            type="text"
+                            id="QualificationEdit"
+                            class="EditInput">
+
+                    </div>
+
+                </div>
+
+            
+
+
+            <button type="button" id="EditSubmit" onclick="EditDone()">
+                Submit
+            </button>
+            </div>
+        </section>
+
+
+        <!-- Bottom Info -->
+        <div class="profile-footer">
+
+            <div class="footer-icon">
+                ✓
+            </div>
+
+            <div>
+                <strong>Your information is secure</strong>
+                <span>Your profile details are protected and can be updated whenever needed.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

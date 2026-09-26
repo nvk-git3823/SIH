@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SIH</title> <!-- EXISTING BACKEND / JAVASCRIPT -->
+    <script src="../JS/Dashboard.js"></script> <!-- EXISTING CSS -->
+    <link rel="stylesheet" href="../CSS/Dashboard.css"> <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body> <!-- ========================================= BACKGROUND ========================================== -->
+    <div class="background">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+    </div> <!-- ========================================= TOP NAVIGATION ========================================== -->
+    <nav id="TopNav"> <!-- BRAND -->
+        <div class="nav-brand">
+            <div class="logo-icon"> ✦ </div> <span> SIH<span class="logo-dot">.</span> </span>
+        </div> <!-- HOME --> <button type="button" class="DashboardButtons nav-home" id="HomeButton"> <span
+                class="nav-icon"> <svg viewBox="0 0 24 24">
+                    <path d="M3 10.5 12 3l9 7.5" />
+                    <path d="M5 9.5V21h14V9.5" />
+                    <path d="M9 21v-6h6v6" />
+                </svg> </span> <span> Home </span> </button> 
+                <button type="button" class="DashboardButtons nav-home" id="SkillsButton" onclick='window.location.href="../HTML/SkillsDashboard.html"'> <span
+                class="nav-icon">      </span> <span> Skills </span> </button><!-- NAV SPACER -->
+        <div class="nav-spacer"></div> <!-- PROFILE --> <button type="button" class="DashboardButtons"
+            id="ProfileButton" onclick='window.location.href="../HTML/Profile.html"'>
+            <div class="profile-button-inner">
+                <div class="profile-image-wrapper"> <img src="../profilepic" id="ProfilePic" alt="Profile"> <span
+                        class="online-dot"></span> </div>
+                <p id="Username"> </p> <span class="profile-chevron"> ↓ </span>
+            </div>
+        </button> <!-- SIGN OUT --> <button type="button" class="DashboardButtons" id="SignOutButton"
+            onclick="SignOut()"> <span class="signout-icon"> ↪ </span> <span> Sign Out </span> </button>
+    </nav> <!-- ========================================= MAIN CONTENT ========================================== -->
+    <main id="Content">
+        <!-- ===================================== WELCOME HEADER ====================================== -->
+        <section class="welcome-section">
+            <div> <span class="welcome-badge"> <span class="status-dot"></span> Dashboard </span><br>
+                <h1> Welcome back ,  <h1 id="welcome"> </h1> </h1>
+                <p> Here's a quick overview of your profile. </p>
+            </div>
+            <div class="dashboard-date"> <span class="date-icon"> ◷ </span> <span> Your personal workspace </span>
+            </div>
+        </section>
+        <!-- ===================================== PROFILE OVERVIEW ====================================== -->
+        <section class="profile-overview"> <!-- PROFILE CARD -->
+            <div class="profile-card">
+                <div class="profile-card-glow"></div>
+                <div class="large-profile-image"> <img src="../profilepic" alt="Profile"> <span
+                        class="large-online-dot"></span> </div>
+                <div class="profile-info"> <span class="profile-label"> YOUR PROFILE </span>
+                    <h2 id="DashboardProfileName"> <span id="Username"></span> </h2>
+                    <p> Keep your profile updated to make the most of your experience. </p>
+                </div> <button type="button" class="profile-action"
+                    onclick='window.location.href="../HTML/Profile.html"'> View Profile <span> → </span> </button>
+            </div> <!-- QUICK STATUS -->
+            <div class="status-card">
+                <div class="status-top"> <span class="status-title"> Profile overview </span> <span class="status-live">
+                        ACTIVE </span> </div>
+                <div class="progress-container">
+                    <div class="progress-header"> <span> Your information </span> <span> Profile </span> </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="status-message">
+                    <div class="status-check"> ✓ </div>
+                    <div> <strong> You're all set </strong> <span> Your dashboard is ready to use. </span> </div>
+                </div>
+            </div>
+        </section> <!-- ===================================== INFORMATION ====================================== -->
+        <section class="information-section">
+            <div class="section-title">
+                <div> <span> PROFILE INFORMATION </span>
+                    <h2> Your details </h2>
+                </div>
+                <div class="section-line"></div>
+            </div> <!-- INFORMATION GRID -->
+            <div class="info-grid"> <!-- COMPANY -->
+                <div class="info-card" id="CompanyCard">
+                    <div class="info-icon"> 🏢 </div>
+                    <div class="info-content"> <span> Company </span>
+                        <p class="txt" id="CompanyName"> Company Name: </p>
+                    </div> <span class="card-arrow"> ↗ </span>
+                </div> <!-- AGE -->
+                <div class="info-card" id="AgeCard">
+                    <div class="info-icon"> ◷ </div>
+                    <div class="info-content"> <span> Age </span>
+                        <p class="txt" id="Age"> Age: </p>
+                    </div> <span class="card-arrow"> ↗ </span>
+                </div> <!-- QUALIFICATION -->
+                <div class="info-card" id="QualificationCard">
+                    <div class="info-icon"> 🎓 </div>
+                    <div class="info-content"> <span> Qualification </span>
+                        <p class="txt" id="Qualification"> Qualification: </p>
+                    </div> <span class="card-arrow"> ↗ </span>
+                </div> <!-- SKILLS -->
+                <div class="info-card" id="SkillsCard">
+                    <div class="info-icon"> ✦ </div>
+                    <div class="info-content"> <span> Skills </span>
+                        <p class="txt" id="Skills"> Skills: </p>
+                    </div> <span class="card-arrow"> ↗ </span>
+                </div>
+            </div>
+        </section> <!-- ===================================== BOTTOM MESSAGE ====================================== -->
+        <section class="bottom-banner">
+            <div class="banner-icon"> ✦ </div>
+            <div> <strong> Make your profile stand out. </strong> <span> Keep your information updated and discover more
+                    possibilities. </span> </div> <button type="button"
+                onclick='window.location.href="../HTML/Profile.html"'> Update Profile <span> → </span> </button>
+        </section>
+    </main>
+    <!-- ========================================= UI-ONLY EFFECTS No backend modification ========================================== -->
+    <script> /* * Adds a subtle reveal animation to cards. * Does not change any existing functionality. */ const cards = document.querySelectorAll(".info-card"); cards.forEach((card, index) => { card.style.animationDelay = `${index * 80}ms`; }); </script>
+</body>
+<script src="../JS/Dashboard.js"></script>
+</html>

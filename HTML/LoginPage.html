@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | SIH Project</title>
+
+    <link rel="stylesheet" href="../CSS/LoginPage.css">
+
+    <script src="../JS/LoginPage.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+    </div>
+
+    <!-- Main Login Wrapper -->
+    <main class="login-wrapper">
+
+        <!-- Left Branding Panel -->
+        <section class="brand-panel">
+
+            <div class="brand-content">
+
+                <div class="brand-logo">
+                    <div class="logo-icon">
+                        ✦
+                    </div>
+
+                    <span>SIH<span class="logo-dot">.</span></span>
+                </div>
+
+                <div class="brand-copy">
+                    <span class="eyebrow">
+                        SMART • CONNECTED • FUTURE READY
+                    </span>
+
+                    <h1>
+                        Welcome to the
+                        <span>future.</span>
+                    </h1>
+
+                    <p>
+                        One platform connecting students, graduates and
+                        companies to create meaningful opportunities.
+                    </p>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="feature-list">
+
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+
+                        <div>
+                            <strong>Fast & Secure</strong>
+                            <span>Designed for a seamless experience.</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">◉</div>
+
+                        <div>
+                            <strong>One Connected Platform</strong>
+                            <span>Everything you need in one place.</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">↗</div>
+
+                        <div>
+                            <strong>Built for Growth</strong>
+                            <span>Discover opportunities and connections.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="brand-footer">
+                <span>© 2026 SIH Project</span>
+                <span class="footer-line"></span>
+                <span>Innovation starts here.</span>
+            </div>
+
+        </section>
+
+
+        <!-- Right Login Panel -->
+        <section class="login-panel">
+
+            <div id="LoginDiv">
+
+                <!-- Mobile Logo -->
+                <div class="mobile-logo">
+                    <div class="logo-icon">✦</div>
+                    <span>SIH<span class="logo-dot">.</span></span>
+                </div>
+
+                <div class="login-header">
+
+                    <span class="welcome-badge">
+                        <span class="status-dot"></span>
+                        Welcome back
+                    </span>
+
+                    <h2 id="LoginText">
+                        Sign in to your account
+                    </h2>
+
+                    <p>
+                        Enter your details to continue to your dashboard.
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm" onsubmit="event.preventDefault(); Login();">
+
+                    <!-- Username -->
+                    <div class="input-group">
+
+                        <label for="LoginUsername">
+                            Username
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20 21a8 8 0 0 0-16 0"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </span>
+
+                            <input
+                                type="text"
+                                class="LoginInputs"
+                                id="LoginUsername"
+                                name="username"
+                                placeholder="Enter your username"
+                                autocomplete="username"
+                                autofocus
+                            />
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="input-group">
+
+                        <div class="label-row">
+                            <label for="LoginPassword">
+                                Password
+                            </label>
+
+                            <a href="#" class="forgot-link">
+                                Forgot password?
+                            </a>
+                        </div>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="10" width="18" height="11" rx="2"/>
+                                    <path d="M7 10V7a5 5 0 0 1 10 0v3"/>
+                                </svg>
+                            </span>
+
+                            <input
+                                type="password"
+                                class="LoginInputs"
+                                id="LoginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                            />
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="passwordToggle"
+                                aria-label="Show password"
+                            >
+                                <svg id="eyeIcon" viewBox="0 0 24 24">
+                                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- User Type -->
+                    <div class="role-section">
+
+                        <div class="role-heading">
+                            <div>
+                                <label>
+                                    Continue as
+                                </label>
+
+                                <span>
+                                    Choose your account type
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="role-grid">
+
+                            <!-- Student -->
+                            <label class="role-card active">
+
+                                <input
+                                    type="radio"
+                                    class="role-radio"
+                                    id="LoginUserTypeS"
+                                    value="StudentUser"
+                                    name="LoginUserType"
+                                    checked
+                                />
+
+                                <span class="role-card-content">
+
+                                    <span class="role-icon">
+                                        🎓
+                                    </span>
+
+                                    <span class="role-info">
+                                        <strong>Student</strong>
+                                        <small>Learn & explore</small>
+                                    </span>
+
+                                    <span class="check-mark">
+                                        ✓
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+                            <!-- Graduate -->
+                            <label class="role-card">
+
+                                <input
+                                    type="radio"
+                                    class="role-radio"
+                                    id="LoginUserTypeG"
+                                    value="GraduateUser"
+                                    name="LoginUserType"
+                                />
+
+                                <span class="role-card-content">
+
+                                    <span class="role-icon">
+                                        🚀
+                                    </span>
+
+                                    <span class="role-info">
+                                        <strong>Graduate</strong>
+                                        <small>Grow & connect</small>
+                                    </span>
+
+                                    <span class="check-mark">
+                                        ✓
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+                            <!-- Company -->
+                            <label class="role-card">
+
+                                <input
+                                    type="radio"
+                                    class="role-radio"
+                                    id="LoginUserTypeC"
+                                    value="CompanyUser"
+                                    name="LoginUserType"
+                                />
+
+                                <span class="role-card-content">
+
+                                    <span class="role-icon">
+                                        🏢
+                                    </span>
+
+                                    <span class="role-info">
+                                        <strong>Company</strong>
+                                        <small>Hire & discover</small>
+                                    </span>
+
+                                    <span class="check-mark">
+                                        ✓
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Remember -->
+                    <div class="login-options">
+
+                        <label class="remember-me">
+
+                            <input type="checkbox" id="rememberMe">
+
+                            <span class="custom-checkbox">
+                                ✓
+                            </span>
+
+                            <span>Remember me</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+                    <button
+                        type="submit"
+                        id="LoginButton"
+                        class="primary-button"
+                    >
+
+                        <span class="button-text">
+                            Sign in
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- Divider -->
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+
+
+                    <!-- Sign Up -->
+                    <div class="signup-section">
+
+                        <span>
+                            Don't have an account?
+                        </span>
+
+                        <button
+                            type="button"
+                            id="SignUpButton"
+                            onclick="SignUp()"
+                        >
+                            Create account
+                            <span>↗</span>
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <!-- Security Note -->
+                <div class="security-note">
+
+                    <span class="lock-icon">🔒</span>
+
+                    <span>
+                        Your information is protected with secure authentication.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Small interaction script -->
+    <script>
+
+        /*
+         * Password visibility
+         */
+        const passwordInput = document.getElementById("LoginPassword");
+        const passwordToggle = document.getElementById("passwordToggle");
+        const eyeIcon = document.getElementById("eyeIcon");
+
+        passwordToggle.addEventListener("click", function () {
+
+            const isPassword =
+                passwordInput.type === "password";
+
+            passwordInput.type =
+                isPassword ? "text" : "password";
+
+            passwordToggle.setAttribute(
+                "aria-label",
+                isPassword ? "Hide password" : "Show password"
+            );
+
+            if (isPassword) {
+
+                eyeIcon.innerHTML = `
+                    <path d="M3 3l18 18"/>
+                    <path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"/>
+                    <path d="M9.9 5.2A9.7 9.7 0 0 1 12 5c6.5 0 10 7 10 7a18.4 18.4 0 0 1-3.2 4.1"/>
+                    <path d="M6.2 6.2C3.5 8.1 2 12 2 12s3.5 7 10 7a9.7 9.7 0 0 0 3-.5"/>
+                `;
+
+            } else {
+
+                eyeIcon.innerHTML = `
+                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                `;
+
+            }
+
+        });
+
+
+        /*
+         * Role card selection animation
+         */
+        const roleCards =
+            document.querySelectorAll(".role-card");
+
+        roleCards.forEach(card => {
+
+            const radio =
+                card.querySelector(".role-radio");
+
+            radio.addEventListener("change", () => {
+
+                roleCards.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                if (radio.checked) {
+                    card.classList.add("active");
+                }
+
+            });
+
+        });
+
+
+        /*
+         * Input focus animation
+         */
+        document.querySelectorAll(".LoginInputs").forEach(input => {
+
+            input.addEventListener("focus", () => {
+                input.closest(".input-wrapper")
+                    ?.classList.add("focused");
+            });
+
+            input.addEventListener("blur", () => {
+
+                input.closest(".input-wrapper")
+                    ?.classList.remove("focused");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
