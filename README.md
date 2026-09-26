@@ -29,7 +29,7 @@
 
 ## 🌐 Live Website
 
-**https://nvk-git3823.github.io/SIH/**
+**https://nvk-git3823.github.io/Skills-and-Career-based-System/**
 
 ## 🎓 Purpose
 
